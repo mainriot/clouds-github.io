@@ -24,7 +24,7 @@ italic {
 article {
     font-family: 'pp_moriregular';
     font-size: 1em;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.015em;
     display:grid;
     text-align: justify;
     margin-left: 10vw;
@@ -75,9 +75,8 @@ h1 {
   h2 {
     font-family: 'ot_brutregular';
     text-align: center;
-     /* padding-left: 10vw;
-      padding-right: 10vw;*/
-      font-size: 3vw;
+    font-size: 3vw;
+    letter-spacing: 0.08em;
   }
   .date{
     display:inherit;
