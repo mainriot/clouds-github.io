@@ -1,0 +1,580 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+#myVideo {
+  position: fixed;
+  max-width: fit-content;
+  max-height: fit-content;
+  top: -1080px;
+  left:-1080px; 
+  z-index: -1; 
+}
+
+italic {
+  font-family: 'ot_brutitalic';
+  font-size: 1em;
+
+}
+
+/*---------------------------------------------------------------*/
+/* BODY COPY */
+/*---------------------------------------------------------------*/
+
+article {
+    font-family: 'pp_moriregular';
+    font-size: 1em;
+    letter-spacing: 0.015em;
+    display:grid;
+    text-align: justify;
+    padding: 5vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    color:antiquewhite;
+  } 
+  @media screen and (max-width: 800px) {
+    article {
+      margin-left: 15vw;
+      margin-right: 15vw;
+    }
+    }
+  @media screen and (min-width: 1250px) {
+  article {
+    font-size: 1.1em;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  }
+
+
+  
+h1 {
+  font-family: 'ot_brutitalic';
+    font-size: 10vw;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 8vw;
+    margin-bottom: -6vw;
+    color: antiquewhite;
+}
+  h2 {
+    font-family: 'ot_brutregular';
+    text-align: left;
+    font-size: 3vw;
+    letter-spacing: 0.08em;
+  }
+  .date{
+    display:inherit;
+    font-family: 'ot_brutregular';
+    font-size: 2.3vw;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  strong {
+    font-family: 'ot_brutregular';
+    font-size: 2.3vw;
+    position: relative;
+    display: contents;
+    letter-spacing: 0.08em;
+  }
+
+  a {
+    text-decoration: none;
+    color: antiquewhite;
+  }
+
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 15vw;
+      padding-top:15vh; 
+      padding-bottom:20vh;
+      margin-left: 10vw;
+
+    }
+    h2 {
+      text-align: start;
+      font-size: 5vw;
+    }
+    .date {
+      font-size: 10vw;
+    }
+    strong {
+      font-size: 1.5em;
+    }
+}
+
+
+  @media screen and (min-width: 1250px) {
+    h1 {
+      text-align: center;
+      font-size: 7vw;
+      padding-top:33.3vh; 
+      padding-bottom:39vh;
+  }
+  h2 {
+    padding-right: 33px;
+  }
+  h2 a {
+    text-align: right;
+    font-size: 1em;
+  }
+  .date {
+    font-size: 2em;
+  }
+  
+  }
+  
+
+
+
+
+
+  .contributions {
+    padding-bottom:50px;
+  }
+  #contributions {
+    text-align: left;
+  }
+  @media screen and (max-width: 800px) {
+    .contributions {
+        text-align: center;
+      }
+      #contributions {
+        text-align: center;
+      }
+  }
+  @media screen and (min-width: 1250px) {
+    .contributions {
+        text-align: center;
+      }
+      #contributions {
+        text-align: center;
+      }
+  }
+ 
+
+/*---------------------------------------------------------------*/
+/*CONTACT DEETS*//*source code:https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+/*---------------------------------------------------------------*/
+
+  .row-social {
+    padding-bottom: 10px;
+  }
+
+  /* Create three equal columns that floats next to each other */
+  .column-social {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row-social:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .column-social {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1250px) {
+    #hours.column-social {
+      float:right;
+      width: 50%;
+      padding:10px;
+    }
+    #address.column-social{
+      float: left;
+      width:50%;
+      padding:10px;
+    }
+  }
+
+
+  #address {
+    text-align: left;
+  }
+  #hours {
+    text-align: right;
+  }
+  @media screen and (max-width: 800px) {
+    #address {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      #hours {
+        text-align: center;
+      }
+  }
+ 
+
+  #contact {
+    text-align:left;
+  }
+  @media screen and (max-width: 800px) {
+    #contact {
+        text-align: center;
+      }
+  }
+  @media screen and (min-width: 1250px) {
+    #contact {
+      text-align: center;
+    }
+  }
+
+ #breev {
+    font-family: 'pp_morisemibold';
+
+  }
+  
+
+
+  #socials {
+    text-align: left;
+    padding-top: 50px;
+    margin-bottom: initial;
+  }
+  @media screen and (max-width: 800px) {
+    #socials {
+        text-align: center;
+        padding-top:8vw;
+      }
+  }
+  @media screen and (min-width: 1250px) {
+    #socials {
+        text-align: center;
+      }
+  }
+  
+
+/*---------------------------------------------------------------*/
+/*IMAGES*//*source code:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_image_grid*/
+/*---------------------------------------------------------------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 88px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 100%;
+  padding: 0 4px;
+}
+@media screen and (min-width: 1250px) {
+  .column {
+      flex: 33.3%;
+      padding: 0 4px;
+    }
+    .info {
+      margin-top:16vw;
+      margin-left: 16px;
+    }
+}
+@media screen and (max-width: 700px) {
+  .column {
+      flex: 100%;
+    }
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle; 
+}
+
+/* Initially hide the images */
+.backgroundphoto {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Add animation for fade-in effect */
+.backgroundphoto.fade-in {
+  opacity: 1;
+}
+
+/* Add animation for fade-out effect */
+.backgroundphoto.fade-out {
+  opacity: 0;
+}
+
+
+/*---------------------------------------------------------------*/
+/* ANIMATIONS */
+/*---------------------------------------------------------------*/
+
+#web {
+  font-family: 'ot_brutregular_mono';
+  font-size: 3vw;
+}
+#web:hover {
+  color: rgb(59, 56, 75);
+
+}
+
+
+#ig {
+  font-family: 'ot_brutregular_mono';
+  letter-spacing: 0.05em;
+}
+#ig:hover {
+  color: rgb(59, 56, 75);
+}
+
+
+#fb {
+  font-family: 'ot_brutregular_mono';
+  letter-spacing: 0.05em;
+}
+#fb:hover {    
+  color: rgb(59, 56, 75);
+}
+
+/*---------------------------------------------------------------*/
+/*DROPDOWNS*//*source code:https://www.w3schools.com/howto/howto_js_dropdown.asp*/
+/*---------------------------------------------------------------*/
+/*SML DROPDOWN*/ @media screen and (max-width: 800px) {
+/*---------------------------------------------------------------*/
+.dropbtn {
+  position: relative;
+    background-color: rgb(40, 40, 40);
+    color: antiquewhite;
+    padding: 16px;
+    font-size: 2.3vw;
+    border: none;
+    cursor: pointer;
+    width: 100%; 
+    text-align: center; 
+    display: inline;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(40, 40, 40);
+    position:relative;
+    display: grid;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: antiquewhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: 'pp_moriregular';
+    color: rgb(40, 40, 40);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+#btn  {
+  font-family: 'pp_morisemibold';
+  font-size: unset;
+}
+
+.dropdown-content a:hover {background-color: #ddd;
+  color:rgb(59, 56, 75);}
+
+.dropdown:hover .dropdown-content {display: grid;}
+
+/*SECOND DROPDOWN*/
+.dropbtnb {
+  background-color: rgb(40, 40, 40);
+  color: antiquewhite;
+  padding: 16px;
+  font-size: 2.3vw;
+  border: none;
+  cursor: pointer;
+  width: 100%; 
+  text-align: center; 
+}
+.dropbtnb:hover, .dropbtnb:focus {
+  background-color: rgb(40, 40, 40);
+  position:relative;
+  display: grid;
+}
+.dropdown-contentb {
+  display: none;
+  position: relative;
+  background-color: antiquewhite;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-contentb a {
+  font-family: 'pp_moriregular';
+  color: rgb(40, 40, 40);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.dropdown-contentb a:hover {background-color: #ddd;
+  color:rgb(59, 56, 75);}
+
+.dropdown:hover .dropdown-contentb {display: grid;}
+
+}
+
+/*---------------------------------------------------------------*/
+/*MED DROPDOWN*/@media screen and (min-width: 800px) {
+/*---------------------------------------------------------------*/
+.dropbtn {
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.contact {
+  margin-top: 25px;
+}
+
+/*SECOND DROPDOWN*/
+.dropbtnb {
+background-color: rgb(40, 40, 40);
+color: antiquewhite;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+width: 100%; 
+text-align: center; 
+}
+.dropbtnb:hover, .dropbtnb:focus {
+  background-color: rgb(40, 40, 40);
+  position:relative;
+  display: grid;
+}
+.dropdown-contentb {
+display: none;
+position: relative;
+background-color: antiquewhite;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-contentb a {
+font-family: 'pp_moriregular';
+color: rgb(40, 40, 40);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: center;
+
+}
+.dropdown-contentb a:hover {background-color: #ddd;
+  color:rgb(59, 56, 75);}
+
+.dropdown:hover .dropdown-contentb {display: grid;}
+
+}
+
+/*---------------------------------------------------------------*/
+/*LRG DROPDOWN*/ @media screen and (min-width: 1250px) {
+/*---------------------------------------------------------------*/
+.dropbtn {
+  position: relative;
+    background-color: rgb(40, 40, 40);
+    color: antiquewhite;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%; 
+    text-align: center; 
+    display: inline;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(40, 40, 40);
+    position:relative;
+    display: grid;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: antiquewhite;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: 'pp_moriregular';
+    color: rgb(40, 40, 40);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+#btn  {
+  font-family: 'pp_morisemibold';
+  font-size: unset;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;
+  color:rgb(59, 56, 75);}
+
+.dropdown:hover .dropdown-content {display: grid;}
+
+/*SECOND DROPDOWN*/
+.dropbtnb {
+  background-color: rgb(40, 40, 40);
+  color: antiquewhite;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%; 
+  text-align: center; 
+}
+.dropbtnb:hover, .dropbtnb:focus {
+  background-color: rgb(40, 40, 40);
+  position:relative;
+  display: grid;
+}
+.dropdown-contentb {
+  display: none;
+  position: relative;
+  background-color: antiquewhite;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-contentb a {
+  font-family: 'pp_moriregular';
+  color: rgb(40, 40, 40);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+
+}
+.dropdown-contentb a:hover {background-color: #ddd;
+  color:rgb(59, 56, 75);}
+
+.dropdown:hover .dropdown-contentb {display: grid;}
+
+strong {
+  font-size: 1.7vw;
+}
+
+}
+
+/*---------------------------------------------------------------*/
+  
+  
