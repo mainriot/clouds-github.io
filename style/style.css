@@ -36,6 +36,8 @@ article {
     article {
       margin-left: 15vw;
       margin-right: 15vw;
+      padding: unset;
+
     }
     }
   @media screen and (min-width: 1250px) {
