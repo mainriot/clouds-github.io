@@ -26,7 +26,7 @@ article {
     font-size: 1em;
     letter-spacing: 0.015em;
     display:grid;
-    text-align: justify;
+    text-align: start;
     padding: 5vw;
     margin-left: 15vw;
     margin-right: 15vw;
