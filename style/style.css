@@ -27,14 +27,13 @@ article {
     letter-spacing: 0.015em;
     display:grid;
     text-align: justify;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 5vw;
+    padding: 5vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     color:antiquewhite;
   } 
   @media screen and (max-width: 800px) {
     article {
-      font-size: 2vw;
       margin-left: 15vw;
       margin-right: 15vw;
     }
@@ -42,8 +41,8 @@ article {
   @media screen and (min-width: 1250px) {
   article {
     font-size: 1.1em;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
   }
 
@@ -51,30 +50,16 @@ article {
   
 h1 {
   font-family: 'ot_brutitalic';
-  font-size: 6vw;
+    font-size: 10vw;
     letter-spacing: 0.02em;
-    text-align: center;
+    text-align: left;
     padding: 8vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    color:antiquewhite;
+    margin-bottom: -6vw;
+    color: antiquewhite;
 }
-@media screen and (max-width: 800px) {
-  h1 {
-    padding-top:45vh; 
-    padding-bottom:45vh}
-}
-@media screen and (min-width: 1250px) {
-  h1 {
-    padding-top:33.3vh; 
-    padding-bottom:33.3vh;
-}
-}
-
-
   h2 {
     font-family: 'ot_brutregular';
-    text-align: center;
+    text-align: left;
     font-size: 3vw;
     letter-spacing: 0.08em;
   }
@@ -83,11 +68,7 @@ h1 {
     font-family: 'ot_brutregular';
     font-size: 2.3vw;
   }
-  
-
-
-
-* {
+  * {
     box-sizing: border-box;
   }
   
@@ -103,6 +84,52 @@ h1 {
     text-decoration: none;
     color: antiquewhite;
   }
+
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 15vw;
+      padding-top:15vh; 
+      padding-bottom:20vh;
+      margin-left: 10vw;
+
+    }
+    h2 {
+      text-align: start;
+      font-size: 5vw;
+    }
+    .date {
+      font-size: 10vw;
+    }
+    strong {
+      font-size: 1.5em;
+    }
+}
+
+
+  @media screen and (min-width: 1250px) {
+    h1 {
+      text-align: center;
+      font-size: 7vw;
+      padding-top:33.3vh; 
+      padding-bottom:39vh;
+  }
+  h2 {
+    padding-right: 33px;
+  }
+  h2 a {
+    text-align: right;
+    font-size: 1em;
+  }
+  .date {
+    font-size: 2em;
+  }
+  
+  }
+  
+
+
+
+
 
   .contributions {
     padding-bottom:50px;
@@ -231,8 +258,7 @@ h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 88px;
-  margin-bottom: 28px;
+  margin-bottom: 88px;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -242,9 +268,9 @@ h1 {
 }
 @media screen and (min-width: 1250px) {
   .column {
-      flex: 100%;
-      padding-top: 10vw;
-      padding-bottom: 10vw;
+      flex: 33.3%;
+      padding: 0 4px;
+
     }
 }
 @media screen and (max-width: 700px) {
